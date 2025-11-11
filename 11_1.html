@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Getters Example</title>
+</head>
+<body>
+    <p>Check the console (F12) to see the output.</p>
+    <script>
+        const student = {
+          firstname: "ABC",
+          get getname() {
+            return this.firstname;
+          }
+        };
+
+        // You access a getter like a property, not a function
+        console.log(student.getname); 
+    </script>
+</body>
+</html>

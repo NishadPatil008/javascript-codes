@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Setters Example</title>
+</head>
+<body>
+    <p>Check the console (F12) to see the output.</p>
+    <script>
+        const student = {
+          firstname: "ABC",
+          set setname(newname) {
+            // This line updates the 'firstname' property
+            this.firstname = newname;
+          }
+        };
+
+        console.log("Before setting:", student.firstname);
+
+        // You call a setter using assignment (=)
+        student.setname = "xyz";
+
+        console.log("After setting:", student.firstname);
+        console.log(student); // You can see the whole object
+    </script>
+</body>
+</html>
