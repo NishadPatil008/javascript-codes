@@ -1,0 +1,18 @@
+<html>
+<head><title>onblur event demo</title>
+<script language="javascript" type="text/javascript">
+function validate()
+{
+    if(document.f1.name1.value=="")
+    {
+        alert("Name required");
+    }
+}
+</script>
+</head>
+<body>
+<form name="f1">
+Name: <input type="text" name="name1" value="" onblur="validate()">
+</form>
+</body>
+</html>
