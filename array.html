@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>JavaScript Array Playground</h2>
+<p>Click a button to perform an operation:</p>
+<button onclick="showArray()">Show Array</button>
+<button onclick="pushElement()">Push 'Kiwi'</button>
+<button onclick="popElement()">Pop Last Element</button>
+<button onclick="changefirst()">Change First to 'Opel'</button>
+<button onclick="length()">Show Length</button>
+<button onclick="first()">Show First Element</button>
+<p id="demo">Array output will appear here.</p>
+<script>
+
+const cars = ["Tata", "Mahendra", "BMW"];
+function showArray() {
+  document.getElementById("demo").innerHTML = "Array: " + cars.join(", ");
+}
+
+function pushElement() {
+  cars.push("Kiwi");
+  showArray();
+}
+
+function popElement() {
+  cars.pop();
+  showArray();
+}
+
+function changefirst() {
+  cars[0] = "Audi";
+  showArray();
+}
+
+function length() {
+  document.getElementById("demo").innerHTML = "Length: " + cars.length;
+}
+
+function first() {
+  document.getElementById("demo").innerHTML = "First Element: " + cars[0];
+}
+</script>
+</body>
+</html>
