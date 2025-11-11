@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Callback Example</title>
+</head>
+<body>
+    <p>Check the console (F12) to see the output.</p>
+    <script>
+        // function
+        function greet(name, callback) {
+            console.log('Hi' + ' ' + name);
+            callback();
+        }
+
+        // callback function
+        function callMe() {
+            console.log('I am callback function');
+        }
+
+        // passing function as an argument
+        greet('Peter', callMe);
+    </script>
+</body>
+</html>

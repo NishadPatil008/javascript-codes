@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Program with a Promise</title>
+</head>
+<body>
+    <p>Check the console (F12) to see the output.</p>
+    <script>
+        const count = true;
+
+        let countValue = new Promise(function (resolve, reject) {
+            if (count) {
+                resolve("There is a count value.");
+            } else {
+                reject("There is no count value.");
+            }
+        });
+
+        console.log(countValue);
+    </script>
+</body>
+</html>
